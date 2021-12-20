@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sual-Cavab Oyunu</title>
+</head>
+
+<body>
+
+
+   <div class="container05"> <div class="container1 " id="progressbar"></div></div>
+    
+    <!----------baslangic sehve start-->
+    <div class="container2" id="baslangic">
+        <h3>Sual cavab oyununa xoş gəlmisiniz başlamaq üçün başla düyməsinə click edin!!!</h3><hr>
+        <button id="restart" >Başla</button>
+        <button id="exit" onclick="history.back()" >Çıxış</button>
+
+    </div>
+    <!----------baslangic sehve finish-->
+
+        <!----------sual-1 start-->
+        <div class="container">
+            <div class="head">
+                <h1 class="sualBasliq">Sual-1:</h1>
+                <h2 class="sual">How do you create a function in JavaScript?</h2>
+            </div>
+            <hr>
+            <div class="sualContent">
+
+                <div class="panel">
+                    <input type="radio" id='d' name="variantlar" value="variantA">
+                    <label for="d">function:myFunction(){}</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="duzCavab1" name="variantlar" value="variantB">
+                    <label for="duzCavab1">function myFunction(){}</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="c" name="variantlar" value="variantC">
+                    <label for="c">function=myFunction(){}</label>
+                </div>
+
+            </div>
+            <button id="submit1" onclick="next(1)">Növbəti</button>
+        </div>
+        <!----------sual-1 finish-->
+
+        <!----------sual-2 start-->
+        <div class="container">
+            <div class="head">
+                <h1 class="sualBasliq">Sual-2:</h1>
+                <h2 class="sual">How do you write "Hello World" in an alert box?</h2>
+            </div>
+            <hr>
+            <div class="sualContent">
+
+                <div class="panel">
+                    <input type="radio" id="duzCavab2" name="variantlar2" value="variantA">
+                    <label for="duzCavab2">alert('Hello World')</label>
+                </div>
+                <div class="panel">
+                    <input type="radio" id="sec1" name="variantlar2" value="variantB">
+                    <label for="sec1">console.log('Hello World')</label>
+                </div>
+                <div class="panel">
+                    <input type="radio" id="sec2" name="variantlar2" value="variantC">
+                    <label for="sec2">mesagge('Hello World')</label>
+                </div>
+
+
+
+            </div>
+            <button id="submit2" onclick="next(2)">Növbəti</button>
+        </div>
+
+        <!----------sual-2 finisht-->
+
+        <!----------sual-3 start-->
+        <div class="container">
+            <div class="head">
+                <h1 class="sualBasliq">Sual-3:</h1>
+                <h2 class="sual">How to write an IF statement in JavaScript?</h2>
+            </div>
+            <hr>
+            <div class="sualContent">
+                <div class="panel"><input type="radio" id="o" name="variantlar3" value="variantA">
+                    <label for="o">if(i<>5)</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="duzCavab3" name="variantlar3" value="variantB">
+                    <label for="duzCavab3">if(i==5)</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="p" name="variantlar3" value="variantC">
+                    <label for="p">if (i==false)</label>
+                </div>
+            </div>
+            <button id="submit3" onclick="next(3)">Növbəti</button>
+        </div>
+        <!----------sual-3 finish-->
+
+        <!----------sual-4 start-->
+        <div class="container">
+            <div class="head">
+                <h1 class="sualBasliq">Sual-4:</h1>
+                <h2 class="sual">How does a FOR loop start?</h2>
+            </div>
+            <hr>
+            <div class="sualContent">
+
+                <div class="panel"><input type="radio" id="x" name="variantlar4" value="variantA">
+                    <label for="x">for{let i=0;i<9;i++}()</label>
+                </div>
+                <div class="panel"><input type="radio" id="s" name="variantlar4" value="variantB">
+                    <label for="s">for(i=0;i<9;i++)</label>
+                </div>
+                <div class="panel"><input type="radio" id="duzCavab4" name="variantlar4" value="variantC">
+                    <label for="duzCavab4">for(let i=0;i<9;i++){}</label>
+                </div>
+
+
+            </div>
+            <button id="submit4" onclick="next(4)">Növbəti</button>
+        </div>
+        <!----------sual-4 finish-->
+
+        <!----------sual-5 start-->
+        <div class="container">
+            <div class="head">
+                <h1 class="sualBasliq">Sual-5:</h1>
+                <h2 class="sual">How can you add a comment in a JavaScript?</h2>
+            </div>
+            <hr>
+            <div class="sualContent">
+
+                <div class="panel">
+                    <input type="radio" id="w" name="variantlar5" value="variantA">
+                    <label for="w">!-comment</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="q" name="variantlar5" value="variantB">
+                    <label for="q">/comment</label>
+                </div>
+
+                <div class="panel">
+                    <input type="radio" id="duzCavab5" name="variantlar5" value="variantC">
+                    <label for="duzCavab5">//comment</label>
+                </div>
+
+
+
+            </div>
+            <button id="submit5" onclick="result()">Nəticə</button>
+        </div>
+        <!----------sual-5 finish-->
+
+        <!---netice hisse start-->
+        <div class="container" id="message">
+            <h3>Message!!!!!!</h3><hr>
+            <h4>Bu oyunda cavablandırğınız sualların nəticələri:</h4>
+            <span class="basliq">Oyunda Verilən sualların sayı:</span>
+            <span id="sualSay">5</span>
+            <h4>Bu oyunda cavablandırğınız düz cavabların sayı:</h4>
+            <span id="duzCavabSay"></span>
+
+            <button id="restart" onClick="history.go(0);">Restart</button>
+
+        </div>
+         <!---netice hisse finish-->
+
+       
+   
+
+        
+
+
+
+    <script src="cod.js"></script>
+  
+</body>
+
+</html>
